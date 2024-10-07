@@ -201,6 +201,8 @@ Partial Public Class rpt締日請求書
         Me.XrLabel5 = New DevExpress.XtraReports.UI.XRLabel()
         Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
         Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
+        Me.lbl得意先コード = New DevExpress.XtraReports.UI.XRLabel()
+        Me.lbl得意先名 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.tbl明細, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbl合計請求, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbl合計額, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -219,7 +221,7 @@ Partial Public Class rpt締日請求書
         '
         'pnl請求書
         '
-        Me.pnl請求書.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.tbl明細, Me.tbl合計請求, Me.tbl合計額})
+        Me.pnl請求書.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.lbl得意先名, Me.lbl得意先コード, Me.tbl明細, Me.tbl合計請求, Me.tbl合計額})
         Me.pnl請求書.Dpi = 254.0!
         Me.pnl請求書.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 0.0!)
         Me.pnl請求書.LockedInUserDesigner = True
@@ -1882,6 +1884,34 @@ Partial Public Class rpt締日請求書
         Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254.0!)
         Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
+        'lbl得意先コード
+        '
+        Me.lbl得意先コード.CanGrow = False
+        Me.lbl得意先コード.Dpi = 254.0!
+        Me.lbl得意先コード.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.lbl得意先コード.LocationFloat = New DevExpress.Utils.PointFloat(250.0!, 10.0!)
+        Me.lbl得意先コード.Name = "lbl得意先コード"
+        Me.lbl得意先コード.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254.0!)
+        Me.lbl得意先コード.SizeF = New System.Drawing.SizeF(156.1042!, 40.0!)
+        Me.lbl得意先コード.StylePriority.UseFont = False
+        Me.lbl得意先コード.StylePriority.UsePadding = False
+        Me.lbl得意先コード.StylePriority.UseTextAlignment = False
+        Me.lbl得意先コード.Text = "XXXXXX"
+        Me.lbl得意先コード.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
+        '
+        'lbl得意先名
+        '
+        Me.lbl得意先名.CanGrow = False
+        Me.lbl得意先名.Dpi = 254.0!
+        Me.lbl得意先名.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.lbl得意先名.LocationFloat = New DevExpress.Utils.PointFloat(430.0!, 0.0!)
+        Me.lbl得意先名.Name = "lbl得意先名"
+        Me.lbl得意先名.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254.0!)
+        Me.lbl得意先名.SizeF = New System.Drawing.SizeF(801.384!, 60.0!)
+        Me.lbl得意先名.StylePriority.UseFont = False
+        Me.lbl得意先名.StylePriority.UsePadding = False
+        Me.lbl得意先名.Text = "lbl得意先名"
+        '
         'rpt締日請求書
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin})
@@ -2084,4 +2114,6 @@ Partial Public Class rpt締日請求書
     Friend WithEvents cell材料区分20 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents cell個数20 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents cell金額20 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents lbl得意先コード As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents lbl得意先名 As DevExpress.XtraReports.UI.XRLabel
 End Class

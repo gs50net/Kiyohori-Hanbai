@@ -14,6 +14,7 @@ Public Class rpt締日請求書
             Dim strSql As String = "SELECT *" & _
                                     " FROM v601_締日請求書印刷 v601"
             strSql &= String.Format(" WHERE ID = {0}", ID)
+            strSql &= " ORDER BY 納品日"
 
             FillData(strSql)
 
@@ -102,6 +103,10 @@ Public Class rpt締日請求書
         End If
 
         Dim row As DataRow = detail(0)
+
+        lbl得意先コード.Text = CFncCommon.ObjToStr(row("得意先コード"))
+        lbl得意先名.Text = String.Format("{0} 様", CFncCommon.ObjToStr(row("得意先名")).Trim)
+
         cell合計請求額.Text = String.Format("\{0:###,###,##0}", CFncCommon.ObjToDec(row("今回請求金額")))
         cell前月合計請求額.Text = String.Format("\{0:###,###,##0}", CFncCommon.ObjToDec(row("前回請求金額")))
         cell入金額.Text = String.Format("\{0:###,###,##0}", CFncCommon.ObjToDec(row("入金金額")))

@@ -1702,7 +1702,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\Setup_Hanbai_V1.0.0.2.msi"
+        "OutputFilename" = "8:Release\\Setup_Hanbai_V1.0.0.3.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -3823,9 +3823,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:請求書発行 V.1.0.0.0"
+        "ProductName" = "8:請求書発行 V.1.0.0.3"
         "ProductCode" = "8:{9EDF004C-A9C8-4EB8-85B9-8F1390597AF3}"
-        "PackageCode" = "8:{142ADAF5-2EA3-4F47-A32E-B4CBA039D51F}"
+        "PackageCode" = "8:{25A4BDF7-F0EE-4484-ACD5-6F8A176ACF37}"
         "UpgradeCode" = "8:{36147972-3B22-40CE-AA9A-0E9F09F01270}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -3947,7 +3947,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6ED87D521FF64811A61200C3F9AA8C4F"
             {
-            "Name" = "8:請求書発行(V1.0.0.0)"
+            "Name" = "8:請求書発行(V1.0.0.3)"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
