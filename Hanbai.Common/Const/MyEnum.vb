@@ -1,0 +1,5 @@
+﻿Namespace MyConst
+
+
+
+End Namespace
