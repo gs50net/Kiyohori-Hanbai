@@ -106,6 +106,8 @@ Public Class rpt締日請求書
 
         lbl得意先コード.Text = CFncCommon.ObjToStr(row("得意先コード"))
         lbl得意先名.Text = String.Format("{0} 様", CFncCommon.ObjToStr(row("得意先名")).Trim)
+        lbl締日.Text = String.Format("締日{0}日　請求期間　{1:yyyy年M月d日}～{2:yyyy年M月d日}", CFncCommon.ObjToStr(row("締日")), row("請求開始日"), row("請求終了日"))
+
 
         cell合計請求額.Text = String.Format("\{0:###,###,##0}", CFncCommon.ObjToDec(row("今回請求金額")))
         cell前月合計請求額.Text = String.Format("\{0:###,###,##0}", CFncCommon.ObjToDec(row("前回請求金額")))
