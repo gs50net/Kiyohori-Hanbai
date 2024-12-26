@@ -10,6 +10,7 @@
         ''' <remarks></remarks>
         Public Enum enmScreen
             締日請求書発行
+            得意先一覧
         End Enum
 
 #End Region
@@ -183,6 +184,10 @@
             mprcNewForm(enmScreen.締日請求書発行, DirectCast(sender, SimpleButton))
         End Sub
 
+        Private Sub SimpleButton1_Click(sender As System.Object, e As System.EventArgs) Handles btn得意先一覧.Click
+            mprcNewForm(enmScreen.得意先一覧, DirectCast(sender, SimpleButton))
+        End Sub
+
 #End Region
 
 #Region "プライベート　メソッド"
@@ -297,6 +302,8 @@
             Select Case enmScreen
                 Case frmMain.enmScreen.締日請求書発行
                     frm = New frm締日請求書発行(Me, btn)
+                Case frmMain.enmScreen.得意先一覧
+                    frm = New frm得意先一覧(Me, btn)
             End Select
 
             If Not IsNothing(frm) Then

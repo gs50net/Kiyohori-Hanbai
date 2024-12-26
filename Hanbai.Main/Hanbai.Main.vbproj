@@ -173,6 +173,12 @@
     <Compile Include="Form\Dialog\dlgPrintPreview.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\得意先一覧\frm得意先一覧.designer.vb">
+      <DependentUpon>frm得意先一覧.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\得意先一覧\frm得意先一覧.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\締日請求書発行\frm締日請求書発行.designer.vb">
       <DependentUpon>frm締日請求書発行.vb</DependentUpon>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Dialog\dlgPrintPreview.resx">
       <DependentUpon>dlgPrintPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\得意先一覧\frm得意先一覧.resx">
+      <DependentUpon>frm得意先一覧.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\締日請求書発行\frm締日請求書発行.resx">
       <DependentUpon>frm締日請求書発行.vb</DependentUpon>

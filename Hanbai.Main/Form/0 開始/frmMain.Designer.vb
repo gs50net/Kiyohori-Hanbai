@@ -37,6 +37,7 @@
             Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
             Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.pnlMain = New DevExpress.XtraEditors.PanelControl()
+            Me.btn得意先一覧 = New DevExpress.XtraEditors.SimpleButton()
             CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.LayoutControl1.SuspendLayout()
             CType(Me.LayoutControl2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,6 +114,7 @@
             Me.GroupControl1.AppearanceCaption.Options.UseFont = True
             Me.GroupControl1.AppearanceCaption.Options.UseTextOptions = True
             Me.GroupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.GroupControl1.Controls.Add(Me.btn得意先一覧)
             Me.GroupControl1.Controls.Add(Me.btn締日請求書発行)
             Me.GroupControl1.Location = New System.Drawing.Point(14, 17)
             Me.GroupControl1.Name = "GroupControl1"
@@ -204,6 +206,16 @@
             Me.pnlMain.Size = New System.Drawing.Size(1166, 720)
             Me.pnlMain.TabIndex = 9
             '
+            'btn得意先一覧
+            '
+            Me.btn得意先一覧.Appearance.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.btn得意先一覧.Appearance.Options.UseFont = True
+            Me.btn得意先一覧.Location = New System.Drawing.Point(59, 107)
+            Me.btn得意先一覧.Name = "btn得意先一覧"
+            Me.btn得意先一覧.Size = New System.Drawing.Size(380, 50)
+            Me.btn得意先一覧.TabIndex = 1
+            Me.btn得意先一覧.Text = "得意先一覧"
+            '
             'frmMain
             '
             Me.Appearance.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -248,6 +260,7 @@
         Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
         Friend WithEvents pnlMain As DevExpress.XtraEditors.PanelControl
         Friend WithEvents btn締日請求書発行 As DevExpress.XtraEditors.SimpleButton
+        Friend WithEvents btn得意先一覧 As DevExpress.XtraEditors.SimpleButton
     End Class
 
 

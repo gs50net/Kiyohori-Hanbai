@@ -1,24 +1,5 @@
 ﻿Namespace Form
 
-    Public Class ListData
-        ''' <summary>
-        ''' ページ
-        ''' 1:顧客名
-        ''' 2:請求書 
-        ''' </summary>
-        ''' <value></value>
-        ''' <returns></returns>
-        ''' <remarks></remarks>
-        Public Property PAGE As Integer
-        Public Property ID As Integer
-        Public Property 得意先コード As String
-        Public Property 枝番 As Integer
-        Public Property 得意先名 As String
-        Public Property 郵便番号 As String
-        Public Property 住所１ As String
-        Public Property 住所２ As String
-    End Class
-
     Friend Class frm締日請求書発行
 
 #Region "定数"
@@ -324,6 +305,25 @@
         End Function
 #End Region
 
+    End Class
+
+    Public Class ListData
+        ''' <summary>
+        ''' ページ
+        ''' 1:顧客名
+        ''' 2:請求書 
+        ''' </summary>
+        ''' <value></value>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Property PAGE As Integer
+        Public Property ID As Integer
+        Public Property 得意先コード As String
+        Public Property 枝番 As Integer
+        Public Property 得意先名 As String
+        Public Property 郵便番号 As String
+        Public Property 住所１ As String
+        Public Property 住所２ As String
     End Class
 
 End Namespace
